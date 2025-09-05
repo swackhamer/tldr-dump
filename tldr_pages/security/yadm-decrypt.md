@@ -1,0 +1,11 @@
+# yadm-decrypt
+
+> Decrypt files that were encrypted by `yadm`. When activating this command you will be prompted for a password. More information: <https://yadm.io/docs/encryption>.
+
+## Examples
+
+### Decrypt files
+
+```bash
+yadm decrypt
+```

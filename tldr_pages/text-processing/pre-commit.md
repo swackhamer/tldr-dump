@@ -1,0 +1,35 @@
+# pre-commit
+
+> Create Git hooks that get run before a commit. More information: <https://pre-commit.com>.
+
+## Examples
+
+### Install pre-commit into your Git hooks
+
+```bash
+pre-commit install
+```
+
+### Run pre-commit hooks on all staged files
+
+```bash
+pre-commit run
+```
+
+### Run pre-commit hooks on all files, staged or unstaged
+
+```bash
+pre-commit run --all-files
+```
+
+### Clean pre-commit cache
+
+```bash
+pre-commit clean
+```
+
+### Update pre-commit configuration file to the latest repos' versions
+
+```bash
+pre-commit autoupdate
+```

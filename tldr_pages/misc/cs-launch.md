@@ -1,0 +1,29 @@
+# cs-launch
+
+> Launch an application from the name directly from Maven dependencies without the need of installing it. More information: <https://get-coursier.io/docs/cli-launch>.
+
+## Examples
+
+### Launch a specific application with arguments
+
+```bash
+cs launch application_name -- argument1 argument2 ...
+```
+
+### Launch a specific application version with arguments
+
+```bash
+cs launch application_name:application_version -- argument1 argument2 ...
+```
+
+### Launch a specific version of an application specifying which is the main file
+
+```bash
+cs launch group_id:artifact_id:artifact_version --main-class path/to/main_class_file
+```
+
+### Launch an application with specific Java options and JVM memory ones
+
+```bash
+cs launch --java-opt -Doption_name1:option_value1 -Doption_name2:option_value2 ... --java-opt -Xjvm_option1 -Xjvm_option2 ... application_name
+```

@@ -1,0 +1,53 @@
+# cli53
+
+> Command line tool for Amazon Route 53. More information: <https://github.com/barnybug/cli53>.
+
+## Examples
+
+### List domains
+
+```bash
+cli53 list
+```
+
+### Create a domain
+
+```bash
+cli53 create example.com --comment "comment"
+```
+
+### Export a bind zone file to `stdout`
+
+```bash
+cli53 export example.com
+```
+
+### Create a `www` subdomain pointing to a relative record in the same zone
+
+```bash
+cli53 [rc|rrcreate] example.com 'www 300 CNAME lb'
+```
+
+### Create a `www` subdomain pointing to an external address (must end with a dot)
+
+```bash
+cli53 [rc|rrcreate] example.com 'www 300 CNAME lb.example.com.'
+```
+
+### Create a `www` subdomain pointing to an IP address
+
+```bash
+cli53 [rc|rrcreate] example.com 'www 300 A 150.130.110.1'
+```
+
+### Replace a `www` subdomain pointing to a different IP
+
+```bash
+cli53 [rc|rrcreate] --replace 'www 300 A 150.130.110.2'
+```
+
+### Delete a record A
+
+```bash
+cli53 [rd|rrdelete] example.com www A
+```

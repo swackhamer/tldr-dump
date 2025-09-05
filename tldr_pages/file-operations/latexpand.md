@@ -1,0 +1,35 @@
+# latexpand
+
+> Simplify LaTeX source files by removing comments and resolving `\include`s, `\input`s, etc. More information: <https://www.ctan.org/pkg/latexpand>.
+
+## Examples
+
+### Simplify the specified source file and save the result to the specified output file
+
+```bash
+latexpand [-o|--output] path/to/output.tex path/to/file.tex
+```
+
+### Do not remove comments
+
+```bash
+latexpand --keep-comments [-o|--output] path/to/output.tex path/to/file.tex
+```
+
+### Do not expand `\include`s, `\input`s etc.
+
+```bash
+latexpand --keep-includes [-o|--output] path/to/output.tex path/to/file.tex
+```
+
+### Expand `\usepackage`s as far as the corresponding STY files can be found
+
+```bash
+latexpand --expand-usepackage [-o|--output] path/to/output.tex path/to/file.tex
+```
+
+### Inline the specified BBL file
+
+```bash
+latexpand --expand-bbl path/to/bibliography.bbl [-o|--output] path/to/output.tex path/to/file.tex
+```

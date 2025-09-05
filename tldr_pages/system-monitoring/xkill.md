@@ -1,0 +1,23 @@
+# xkill
+
+> Kill a window interactively in a graphical session. See also: `kill`, `killall`. More information: <https://www.x.org/releases/current/doc/man/man1/xkill.1.xhtml>.
+
+## Examples
+
+### Display a cursor to kill a window when pressing the left mouse button (press any other mouse button to cancel)
+
+```bash
+xkill
+```
+
+### Display a cursor to select a window to kill by pressing any mouse button
+
+```bash
+xkill -button any
+```
+
+### Kill a window with a specific ID (use `xwininfo` to get info about windows)
+
+```bash
+xkill -id id
+```

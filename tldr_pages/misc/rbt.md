@@ -1,0 +1,35 @@
+# rbt
+
+> RBTools, a set of tools for working with Review Board and RBCommons. More information: <https://www.reviewboard.org/docs/rbtools/dev/>.
+
+## Examples
+
+### Post changes to Review Board
+
+```bash
+rbt post change_number
+```
+
+### Display the diff that will be sent to Review Board
+
+```bash
+rbt diff
+```
+
+### Land a change in a local branch or on a review request
+
+```bash
+rbt land branch_name
+```
+
+### Patch your tree with a change on a review request
+
+```bash
+rbt patch review_request_id
+```
+
+### Set up RBTool to talk to a repository
+
+```bash
+rbt setup-repo
+```

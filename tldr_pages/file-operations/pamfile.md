@@ -1,0 +1,23 @@
+# pamfile
+
+> Describe Netpbm (PAM or PNM) files. More information: <https://netpbm.sourceforge.net/doc/pamfile.html>.
+
+## Examples
+
+### Describe the specified Netpbm files
+
+```bash
+pamfile path/to/file1 path/to/file2 ...
+```
+
+### Describe every image in each input file (as opposed to only the first image in each file) in a machine-readable format
+
+```bash
+pamfile [-a|-allimages] -machine path/to/file
+```
+
+### Display a count on how many images the input files contain
+
+```bash
+pamfile [-cou|-count] path/to/file
+```

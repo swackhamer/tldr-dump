@@ -1,0 +1,53 @@
+# az-quantum
+
+> Manage Azure Quantum workspaces and submit quantum jobs to providers (preview, requires quantum extension). More information: <https://learn.microsoft.com/cli/azure/quantum>.
+
+## Examples
+
+### Create a new Azure Quantum workspace
+
+```bash
+az quantum workspace create [-g|--resource-group] ResourceGroup [-l|--location] Location [-w|--workspace-name] Workspace [-a|--storage-account] MyStorageAccountName
+```
+
+### List all Azure Quantum workspaces
+
+```bash
+az quantum workspace list
+```
+
+### Set a default Azure Quantum workspace
+
+```bash
+az quantum workspace set [-g|--resource-group] ResourceGroup [-w|--workspace-name] Workspace
+```
+
+### Submit a QIR quantum job to a target
+
+```bash
+az quantum job submit [-g|--resource-group] ResourceGroup [-w|--workspace-name] Workspace [-l|--location] Location [-t|--target-id] Id --job-name Job --job-input-file QirBitcode.bc --job-input-format qir.v1
+```
+
+### List all jobs in a Quantum Workspace
+
+```bash
+az quantum job list [-g|--resource-group] ResourceGroup [-l|--location] Location [-w|--workspace-name] Workspace
+```
+
+### Get the output of a quantum job
+
+```bash
+az quantum job output [-g|--resource-group] ResourceGroup [-w|--workspace-name] Workspace --job-id Job
+```
+
+### List available provider offerings in a location
+
+```bash
+az quantum offerings list [-l|--location] Location
+```
+
+### Set a default target for job submissions
+
+```bash
+az quantum target set [-t|--target-id] Id
+```

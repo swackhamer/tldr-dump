@@ -1,0 +1,23 @@
+# rarcrack
+
+> Password cracker for RAR, Zip and 7z archives.
+
+## Examples
+
+### Brute force the password for an archive (tries to guess the archive type)
+
+```bash
+rarcrack path/to/file.zip
+```
+
+### Specify the archive type
+
+```bash
+rarcrack --type rar|zip|7z path/to/file.zip
+```
+
+### Use multiple threads
+
+```bash
+rarcrack --threads 6 path/to/file.zip
+```

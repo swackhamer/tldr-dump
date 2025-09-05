@@ -1,0 +1,35 @@
+# whence
+
+> A Zsh builtin to indicate how a command would be interpreted. More information: <https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-whence>.
+
+## Examples
+
+### Interpret `command`, with expansion if defined as an `alias` (similar to the `command -v` builtin)
+
+```bash
+whence "command"
+```
+
+### Display type of `command`, with location if defined as a function, or binary (equivalent to the `type` and `command -V` builtins)
+
+```bash
+whence -v "command"
+```
+
+### Same as above, except display content of shell functions instead of location (equivalent to `which` builtin)
+
+```bash
+whence -c "command"
+```
+
+### Same as above, but show all occurrences on command path (equivalent to the `where` builtin)
+
+```bash
+whence -ca "command"
+```
+
+### Search only the `PATH` for `command`, ignoring builtins, aliases or shell functions (equivalent to the `where` command)
+
+```bash
+whence -p "command"
+```

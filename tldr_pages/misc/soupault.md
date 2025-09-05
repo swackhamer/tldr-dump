@@ -1,0 +1,35 @@
+# soupault
+
+> A static website generator based on HTML element tree rewriting. It can also be used as an HTML post-processor or metadata extractor. More information: <https://soupault.app>.
+
+## Examples
+
+### Initialize a minimal website project in the current working directory
+
+```bash
+soupault --init
+```
+
+### Build a website
+
+```bash
+soupault
+```
+
+### Override default configuration file and directory locations
+
+```bash
+soupault --config config_path --site-dir input_dir --build-dir output_dir
+```
+
+### Extract metadata into a JSON file without generating pages
+
+```bash
+soupault --index-only --dump-index-json path/to/file.json
+```
+
+### Show the effective configuration (values from `soupault.toml` plus defaults)
+
+```bash
+soupault --show-effective-config
+```

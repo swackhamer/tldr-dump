@@ -1,0 +1,23 @@
+# git-stamp
+
+> Stamp the last commit message, with the possibility to reference the issues numbers from your bug tracker or link to its review page. Part of `git-extras`. More information: <https://manned.org/git-stamp>.
+
+## Examples
+
+### Stamp the last commit message referencing it with the issue number from your bug tracker
+
+```bash
+git stamp issue_number
+```
+
+### Stamp the last commit message linking it to its review page
+
+```bash
+git stamp Review https://example.org/path/to/review
+```
+
+### Stamp the last commit message replacing previous issues with a new one
+
+```bash
+git stamp [-r|--replace] issue_number
+```

@@ -1,0 +1,9 @@
+# Virtualization
+
+3 commands in this category.
+
+## Commands
+
+- [qemu-system-i386](./qemu-system-i386.md) - Emulate the `i386` architecture. More information: <https://www.qemu.org/docs/master/system/target-i...
+- [qemu-system-riscv64](./qemu-system-riscv64.md) - Emulate `riscv64` architecture. More information: <https://www.qemu.org/docs/master/system/target-ri...
+- [qemu-system-x86_64](./qemu-system-x86_64.md) - Emulate the `x86_64` architecture. More information: <https://www.qemu.org/docs/master/system/target...

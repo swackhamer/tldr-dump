@@ -1,0 +1,41 @@
+# wondershaper
+
+> Allows the user to limit the bandwidth of network adapters. More information: <https://github.com/magnific0/wondershaper#usage>.
+
+## Examples
+
+### Show the current [s]tatus of a specific [a]dapter
+
+```bash
+wondershaper -s -a adapter_name
+```
+
+### Clear limits from a specific [a]dapter
+
+```bash
+wondershaper -c -a adapter_name
+```
+
+### Set a specific maximum [d]ownload rate (in Kbps)
+
+```bash
+wondershaper -a adapter_name -d 1024
+```
+
+### Set a specific maximum [u]pload rate (in Kbps)
+
+```bash
+wondershaper -a adapter_name -u 512
+```
+
+### Set a specific maximum [d]ownload rate and [u]pload rate (in Kpbs)
+
+```bash
+wondershaper -a adapter_name -d 1024 -u 512
+```
+
+### Display [h]elp
+
+```bash
+wondershaper -h
+```

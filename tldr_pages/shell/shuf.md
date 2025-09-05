@@ -1,0 +1,29 @@
+# shuf
+
+> Generate random permutations. More information: <https://manpagez.com/man/1/shuf/>.
+
+## Examples
+
+### Randomize the order of lines in a file and output the result
+
+```bash
+shuf path/to/file
+```
+
+### Only output the first 5 entries of the result
+
+```bash
+shuf --head-count=5 path/to/file
+```
+
+### Write output to another file
+
+```bash
+shuf path/to/input_file --output ath/to/output_file
+```
+
+### Generate random numbers in the range 1 to 10
+
+```bash
+shuf --input-range=1-10
+```

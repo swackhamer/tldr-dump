@@ -1,0 +1,11 @@
+# yarn-why
+
+> Identifies why a Yarn package has been installed. More information: <https://github.com/amio/yarn-why>.
+
+## Examples
+
+### Show why a Yarn package is installed
+
+```bash
+yarn-why package
+```

@@ -1,0 +1,35 @@
+# open.fish
+
+> Opens files, directories, and URIs with default applications. This command is available through fish on operating systems without the built-in `open` command (e.g. Haiku and macOS). More information: <https://fishshell.com/docs/current/cmds/open.html>.
+
+## Examples
+
+### Open a file with the associated application
+
+```bash
+open path/to/file.ext
+```
+
+### Open all the files of a given extension in the current directory with the associated application
+
+```bash
+open *.ext
+```
+
+### Open a directory using the default file manager
+
+```bash
+open path/to/directory
+```
+
+### Open a website using the default web browser
+
+```bash
+open https://example.com
+```
+
+### Open a specific URI using the default application that can handle it
+
+```bash
+open tel:123
+```

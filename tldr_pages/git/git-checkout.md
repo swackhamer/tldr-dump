@@ -1,0 +1,53 @@
+# git-checkout
+
+> Checkout a branch or paths to the working tree. More information: <https://git-scm.com/docs/git-checkout>.
+
+## Examples
+
+### Create and switch to a new branch
+
+```bash
+git checkout -b branch_name
+```
+
+### Create and switch to a new branch based on a specific reference (branch, remote/branch, tag are examples of valid references)
+
+```bash
+git checkout -b branch_name reference
+```
+
+### Switch to an existing local branch
+
+```bash
+git checkout branch_name
+```
+
+### Switch to the previously checked out branch
+
+```bash
+git checkout -
+```
+
+### Switch to an existing remote branch
+
+```bash
+git checkout [-t|--track] remote_name/branch_name
+```
+
+### Discard all unstaged changes in the current directory (see `git reset` for more undo-like commands)
+
+```bash
+git checkout .
+```
+
+### Discard unstaged changes to a given file
+
+```bash
+git checkout path/to/file
+```
+
+### Replace a file in the current directory with the version of it committed in a given branch
+
+```bash
+git checkout branch_name -- path/to/file
+```

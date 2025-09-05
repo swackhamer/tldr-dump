@@ -1,0 +1,23 @@
+# kubectl-scale
+
+> Set a new size for a deployment, replica set, replication controller, or stateful set. More information: <https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#scale>.
+
+## Examples
+
+### Scale a replica set
+
+```bash
+kubectl scale --replicas=number_of_replicas rs/replica_name
+```
+
+### Scale a resource identified by a file
+
+```bash
+kubectl scale --replicas=number_of_replicas [-f|--filename] path/to/file.yml
+```
+
+### Scale a deployment based on current number of replicas
+
+```bash
+kubectl scale --current-replicas=current_replicas --replicas=number_of_replicas deployment/deployment_name
+```

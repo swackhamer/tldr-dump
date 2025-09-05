@@ -1,0 +1,29 @@
+# ppmtoxpm
+
+> Convert a PPM image to an X11 version 3 pixmap. More information: <https://netpbm.sourceforge.net/doc/ppmtoxpm.html>.
+
+## Examples
+
+### Convert a PPM image to a XPM image
+
+```bash
+ppmtoxpm path/to/input_file.ppm > path/to/output_file.xpm
+```
+
+### Specify the prefix string in the output XPM image
+
+```bash
+ppmtoxpm [-n|-name] prefix_string path/to/input_file.ppm > path/to/output_file.xpm
+```
+
+### In the output XPM file, specify colors by their hexadecimal code instead of their name
+
+```bash
+ppmtoxpm [-h|-hexonly] path/to/input_file.ppm > path/to/output_file.xpm
+```
+
+### Use the specified PGM file as a transparency mask
+
+```bash
+ppmtoxpm [-a|-alphamask] path/to/alpha_file.pgm path/to/input_file.ppm > path/to/output_file.xpm
+```

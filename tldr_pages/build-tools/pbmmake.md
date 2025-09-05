@@ -1,0 +1,17 @@
+# pbmmake
+
+> Create a blank bitmap. More information: <https://netpbm.sourceforge.net/doc/pbmmake.html>.
+
+## Examples
+
+### Create a blank bitmap of the specified dimensions
+
+```bash
+pbmmake width height > path/to/output_file.pbm
+```
+
+### Specify the color of the created bitmap
+
+```bash
+pbmmake -white|black|grey width height > path/to/output_file.pbm
+```

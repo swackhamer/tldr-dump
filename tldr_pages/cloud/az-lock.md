@@ -1,0 +1,41 @@
+# az-lock
+
+> Manage Azure locks. Part of `azure-cli` (also known as `az`). More information: <https://learn.microsoft.com/cli/azure/lock>.
+
+## Examples
+
+### Create a read-only subscription level lock
+
+```bash
+az lock create [-n|--name] lock_name [-t|--lock-type] ReadOnly
+```
+
+### Create a read-only resource group level lock
+
+```bash
+az lock create [-n|--name] lock_name [-g|--resource-group] group_name [-t|--lock-type] ReadOnly
+```
+
+### Delete a subscription level lock
+
+```bash
+az lock delete [-n|--name] lock_name
+```
+
+### Delete a resource group level lock
+
+```bash
+az lock delete [-n|--name] lock_name [-g|--resource-group] group_name
+```
+
+### List out all locks on the subscription level
+
+```bash
+az lock list
+```
+
+### Show a subscription level lock with a specific name
+
+```bash
+az lock show [-n|--name] lock_name
+```

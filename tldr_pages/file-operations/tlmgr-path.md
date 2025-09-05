@@ -1,0 +1,17 @@
+# tlmgr-path
+
+> Add or remove symlinks for TeX Live executables, man pages and info pages. This command has to be re-run for files added in the future. More information: <https://www.tug.org/texlive/doc/tlmgr.html#path>.
+
+## Examples
+
+### Add symlinks to TeX Live files
+
+```bash
+sudo tlmgr path add
+```
+
+### Remove symlinks to TeX Live files
+
+```bash
+sudo tlmgr path remove
+```

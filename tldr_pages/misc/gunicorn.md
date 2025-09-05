@@ -1,0 +1,41 @@
+# gunicorn
+
+> Python WSGI HTTP Server. More information: <https://docs.gunicorn.org/en/latest/run.html>.
+
+## Examples
+
+### Run Python web app
+
+```bash
+gunicorn import.path:app_object
+```
+
+### Listen on port 8080 on localhost
+
+```bash
+gunicorn [-b|--bind] localhost:8080 import.path:app_object
+```
+
+### Turn on live reload
+
+```bash
+gunicorn --reload import.path:app_object
+```
+
+### Use 4 worker processes for handling requests
+
+```bash
+gunicorn [-w|--workers] 4 import.path:app_object
+```
+
+### Use 4 worker threads for handling requests
+
+```bash
+gunicorn --threads 4 import.path:app_object
+```
+
+### Run app over HTTPS
+
+```bash
+gunicorn --certfile cert.pem --keyfile key.pem import.path:app_object
+```

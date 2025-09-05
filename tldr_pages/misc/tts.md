@@ -1,0 +1,41 @@
+# tts
+
+> Synthesize speech. More information: <https://github.com/coqui-ai/TTS#command-line-tts>.
+
+## Examples
+
+### Run text-to-speech with the default models, writing the output to "tts_output.wav"
+
+```bash
+tts --text "text"
+```
+
+### List provided models
+
+```bash
+tts --list_models
+```
+
+### Query info for a model by idx
+
+```bash
+tts --model_info_by_idx model_type/model_query_idx
+```
+
+### Query info for a model by name
+
+```bash
+tts --model_info_by_name model_type/language/dataset/model_name
+```
+
+### Run a text-to-speech model with its default vocoder model
+
+```bash
+tts --text "text" --model_name model_type/language/dataset/model_name
+```
+
+### Run your own text-to-speech model (using the Griffin-Lim vocoder)
+
+```bash
+tts --text "text" --model_path path/to/model.pth --config_path path/to/config.json --out_path path/to/file.wav
+```

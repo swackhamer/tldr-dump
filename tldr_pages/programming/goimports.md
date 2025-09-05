@@ -1,0 +1,29 @@
+# goimports
+
+> Updates Go import lines, adding missing ones and removing unreferenced ones. More information: <https://pkg.go.dev/golang.org/x/tools/cmd/goimports>.
+
+## Examples
+
+### Display the completed import source file
+
+```bash
+goimports path/to/file.go
+```
+
+### Write the result back to the source file instead of `stdout`
+
+```bash
+goimports -w path/to/file.go
+```
+
+### Display diffs and write the result back to the source file
+
+```bash
+goimports -w -d path/to/file.go
+```
+
+### Set the import prefix string after 3rd-party packages (comma-separated list)
+
+```bash
+goimports -local path/to/package1,path/to/package2,... path/to/file.go
+```

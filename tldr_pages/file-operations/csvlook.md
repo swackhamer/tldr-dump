@@ -1,0 +1,11 @@
+# csvlook
+
+> Render a CSV file in the console as a fixed-width table. Included in csvkit. More information: <https://csvkit.readthedocs.io/en/latest/scripts/csvlook.html>.
+
+## Examples
+
+### View a CSV file
+
+```bash
+csvlook data.csv
+```

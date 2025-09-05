@@ -1,0 +1,11 @@
+# convert
+
+> This command is an alias of `magick convert`. Note: This alias is deprecated since ImageMagick 7. It has been replaced by `magick`. Use `magick convert` if you need to use the old tool in versions 7+.
+
+## Examples
+
+### View documentation for the original command
+
+```bash
+tldr magick convert
+```

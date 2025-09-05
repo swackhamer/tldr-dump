@@ -1,0 +1,35 @@
+# velero
+
+> Backup and migrate Kubernetes applications and their persistent volumes. More information: <https://velero.io/docs/main/>.
+
+## Examples
+
+### Create a backup containing all resources
+
+```bash
+velero backup create backup_name
+```
+
+### List all backups
+
+```bash
+velero backup get
+```
+
+### Delete a backup
+
+```bash
+velero backup delete backup_name
+```
+
+### Create a weekly backup, each living for 90 days (2160 hours)
+
+```bash
+velero schedule create schedule_name --schedules="@every 7d" --ttl 2160h0m0s
+```
+
+### Create a restore from the latest successful backup triggered by specific schedule
+
+```bash
+velero restore create --from-schedule schedule_name
+```

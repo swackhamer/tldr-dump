@@ -1,0 +1,29 @@
+# in2csv
+
+> Convert various tabular data formats to CSV. Included in csvkit. More information: <https://csvkit.readthedocs.io/en/latest/scripts/in2csv.html>.
+
+## Examples
+
+### Convert an XLS file to CSV
+
+```bash
+in2csv data.xls
+```
+
+### Convert a DBF file to a CSV file
+
+```bash
+in2csv data.dbf > data.csv
+```
+
+### Convert a specific sheet from an XLSX file to CSV
+
+```bash
+in2csv --sheet=sheet_name data.xlsx
+```
+
+### Pipe a JSON file to in2csv
+
+```bash
+cat data.json | in2csv [-f|--format] json > data.csv
+```
