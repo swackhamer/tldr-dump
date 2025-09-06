@@ -1,5 +1,11 @@
 # TLDR-Dump
 
+> ⚠️ **PROJECT STATUS: UNMAINTAINED** ⚠️
+> 
+> This project is no longer actively maintained and should be considered dead. The code is provided as-is with no guarantees of functionality or updates. Feel free to fork if you'd like to continue development.
+
+---
+
 A Python tool to export all [tldr-pages](https://tldr.sh/) command examples into organized markdown files. This tool uses [tealdeer](https://github.com/dbrgn/tealdeer) to fetch command documentation and organizes them into categorized folders for easy browsing and searching.
 
 ## Features
